@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.app_bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #673ab7;
+    height: 56px;
+    width: 100%;
+}
+
+.tab_bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #673ab7;
+    height: 72px;
+    width: 100%;
+}
+
+.menu_img{
+    height: 24px;
+    width: 24px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 254px;
+}
+
+.search{
+    height: 24px;
+    width: 24px;
+    margin-top: 16px;
+    margin-right: 17px;
+}
+
+.navigation{
+    margin-top: 16px;
+    height: 24px;
+    width: 24px;
+}
+
+.tab{
+    width: 125px;
+    text-align: center;
+}
+
+.tab_text{
+    color: white;
+    margin-top: 42px;
+    font-family: Roboto;
+}
