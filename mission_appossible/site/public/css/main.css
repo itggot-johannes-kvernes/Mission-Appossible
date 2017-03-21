@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: Roboto;
 }
 
 .app_bar{
@@ -18,6 +19,7 @@ body{
     background-color: #673ab7;
     height: 72px;
     width: 100%;
+    box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87)
 }
 
 .menu_img{
@@ -42,6 +44,8 @@ body{
 }
 
 .tab{
+    display: flex;
+    flex-direction: column;
     width: 125px;
     text-align: center;
 }
@@ -49,5 +53,48 @@ body{
 .tab_text{
     color: white;
     margin-top: 42px;
-    font-family: Roboto;
+    margin-bottom: 7px;
+}
+
+.tab_indicator{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.menu {
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 319px;
+    left: -319px;
+
+}
+
+.menu_visible{
+    animation: show 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show{
+    0%{
+        left: -319px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.menu_hidden{
+    animation: hide 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -319px;
+    }
 }

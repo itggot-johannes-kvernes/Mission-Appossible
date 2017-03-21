@@ -62,39 +62,16 @@ body{
     background-color: white;
 }
 
-.menu {
-    background-color: white;
+.menu_in{
     position: absolute;
+    left: -319px;
     height: 100%;
     width: 319px;
-    left: -319px;
-
 }
 
-.menu_visible{
-    animation: show 0.3s 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes show{
-    0%{
-        left: -319px;
-    }
-    100%{
-        left: 0;
-    }
-}
-
-.menu_hidden{
-    animation: hide 0.3s 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hide{
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -319px;
-    }
+.menu_out{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 319px;
 }
