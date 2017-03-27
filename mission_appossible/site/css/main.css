@@ -22,7 +22,7 @@ body{
     box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87)
 }
 
-.menu_img{
+.menu_button{
     height: 24px;
     width: 24px;
     margin-top: 16px;
@@ -62,7 +62,7 @@ body{
     background-color: white;
 }
 
-.menu {
+.menu{
     background-color: white;
     position: absolute;
     height: 100%;
@@ -112,10 +112,11 @@ body{
     width: 100vw;
     background-color: black;
     opacity: 0.5;
-    -webkit-animation: fadein 0.3s;
+    animation: fadein 0.3s;
+    animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadein{
+@keyframes fadein{
     0%{
         opacity: 0;
     }
@@ -125,14 +126,27 @@ body{
 }
 
 .fade_out{
-    -webkit-animation: fadeout 0.3s;
+    animation: fadeout 3s;
+    animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeout{
+@keyframes fadeout{
     0%{
         opacity: 0.5;
     }
     100%{
         opacity: 0;
     }
+}
+
+.menu_img{
+    width: 100%;
+}
+
+.account_img{
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    width: 64px;
+    height: 64px;
 }

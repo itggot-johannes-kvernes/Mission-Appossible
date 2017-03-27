@@ -10,14 +10,24 @@
     <body>
         <header>
             <div class="app_bar">
-                <img class="menu_img" src="./img/menu.png" alt="Menu" onclick="menu_function()">
+                <img class="menu_button" src="./img/menu.png" alt="Menu" onclick="menu_function()">
                 <img class="search" src="./img/search.png" alt="Search">
                 <img class="navigation" src="./img/navigation.png" alt="Navigation">
             </div>
             <div id="dark_box" class="dark_box" onclick="menu_function()">
             </div>
             <nav id="menu" class="menu">
-                <h2>MENU</h2>
+                <img class="menu_img" src="./img/menu_img.jpg">
+                <img class="account_img" src="./img/account_img.png">
+
+                <div class="menu_options">
+                    <div class="starred">
+                    </div>
+                    </div class="new">
+                    </div>
+                    <div class="settings">
+                    </div>
+                </div>
             </nav>
         </header>
         <%= yield %>

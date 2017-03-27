@@ -1,5 +1,4 @@
 function menu_function() {
-
     var y = document.querySelector('#dark_box');
     if(!y.classList.contains('fade_in') && !y.classList.contains('fade_out')){
         y.classList.toggle('fade_in');
