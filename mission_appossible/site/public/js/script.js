@@ -5,9 +5,9 @@ function menu_function() {
     }
     else {
         x.classList.toggle('menu_hidden');
-        x.classList.toggle('menu_visible');
-        
+        x.classList.toggle('menu_visible');   
     }
 
-    
+    var y = document.querySelector('#this_changes_or_something');
+    y.classList.toggle('dark_box')
 }
