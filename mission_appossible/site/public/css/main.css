@@ -126,7 +126,14 @@ body{
 }
 
 .fade_out{
-    animation: fadeout 3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0;
+    animation: fadeout 0.3s;
     animation-fill-mode: forwards;
 }
 
@@ -165,4 +172,8 @@ body{
     height: 121px;
     width: 121px;
     margin: 3px;
+}
+
+a.current_page{
+    color: peachpuff;
 }
