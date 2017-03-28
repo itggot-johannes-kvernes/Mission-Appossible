@@ -69,7 +69,6 @@ body{
     width: 319px;
     top: 0;
     left: -319px;
-
 }
 
 .menu_visible{
@@ -174,6 +173,11 @@ body{
     margin: 3px;
 }
 
-a.current_page{
-    color: peachpuff;
+.current_page{
+    color: #ff6d00;
+}
+
+.menu_icon{
+    width: 24px;
+    height: 24px;
 }
