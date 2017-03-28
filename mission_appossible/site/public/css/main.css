@@ -150,3 +150,19 @@ body{
     width: 64px;
     height: 64px;
 }
+
+.grid_list{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid_vertical{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_picture{
+    height: 121px;
+    width: 121px;
+    margin: 3px;
+}
