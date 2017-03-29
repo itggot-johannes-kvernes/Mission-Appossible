@@ -195,6 +195,14 @@ body{
     height: 36px;
 }
 
+.new{
+    height: 36px;
+}
+
+.settings{
+    height: 36px;
+}
+
 a{
     display: flex;
     align-items: center;

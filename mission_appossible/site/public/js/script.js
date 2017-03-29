@@ -30,6 +30,9 @@ var3.classList.add('current_page');
 if(var2 == 'index.html') {
     document.getElementById('star').classList.add('current_page');
 }
+else if(var2 == 'new.html') {
+    document.getElementById('new').classList.add('current_page');
+}
 else if(var2 == 'settings.html') {
     document.getElementById('settings').classList.add('current_page');
 }
