@@ -21,7 +21,15 @@ function menu_function() {
     }
 }
 
+
 var var1 = location.pathname.split('/');
 var var2 = var1[var1.length - 1];
 var var3 = document.querySelector("a[href='" + var2 + "']");
 var3.classList.add('current_page');
+
+if(var2 == 'index.html') {
+    document.getElementById('star').classList.add('current_page');
+}
+else if(var2 == 'settings.html') {
+    document.getElementById('settings').classList.add('current_page');
+}
