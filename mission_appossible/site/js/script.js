@@ -36,3 +36,14 @@ else if(var2 == 'new.html') {
 else if(var2 == 'settings.html') {
     document.getElementById('settings').classList.add('current_page');
 }
+
+
+if(var2 == 'index.html') {
+    document.querySelector('#title').innerHTML='Hair';
+}
+else if(var2 == 'new.html') {
+    document.querySelector('#title').innerHTML='New';
+}
+else if(var2 == 'settings.html') {
+    document.querySelector('#title').innerHTML='Settings';
+}

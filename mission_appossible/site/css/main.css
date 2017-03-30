@@ -11,23 +11,23 @@ body{
     background-color: #673ab7;
     height: 56px;
     width: 100%;
+    box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87)
 }
 
-.tab_bar{
+/*.tab_bar{
     display: flex;
     flex-direction: row;
     background-color: #673ab7;
     height: 72px;
     width: 100%;
     box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87)
-}
+}*/
 
 .menu_button{
     height: 24px;
     width: 24px;
     margin-top: 16px;
     margin-left: 16px;
-    margin-right: 254px;
     color: white;
 }
 
@@ -208,4 +208,14 @@ a{
     align-items: center;
     text-decoration: none;
     color: black;
+}
+
+#title{
+    color: white;
+    width: 230px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 24px;
 }
