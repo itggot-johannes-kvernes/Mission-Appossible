@@ -189,6 +189,11 @@ body{
 
 .current_page{
     color: #ff6d00;
+    background-color: rgba(0, 0, 0, 0.26)
+}
+
+.background_tiny_bit_darker{
+    background: rgba(0, 0, 0, 0.26);
 }
 
 .starred{
@@ -218,4 +223,9 @@ a{
     height: 24px;
     line-height: 24px;
     padding-left: 24px;
+}
+
+.material-icons{
+    margin-right: 32px;
+    margin-left: 16px;
 }

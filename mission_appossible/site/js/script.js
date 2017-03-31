@@ -28,13 +28,16 @@ var var3 = document.querySelector("a[href='" + var2 + "']");
 var3.classList.add('current_page');
 
 if(var2 == 'index.html') {
-    document.getElementById('star').classList.add('current_page');
+    document.querySelector('#star').classList.add('current_page');
+    document.querySelector('.starred').classList.add('.background_tiny_bit_darker');
 }
 else if(var2 == 'new.html') {
-    document.getElementById('new').classList.add('current_page');
+    document.querySelector('#new').classList.add('current_page');
+    document.querySelector('.new').classList.add('.background_tiny_bit_darker');
 }
 else if(var2 == 'settings.html') {
-    document.getElementById('settings').classList.add('current_page');
+    document.querySelector('#settings').classList.add('current_page');
+    document.querySelector('.settings').classList.add('.background_tiny_bit_darker');
 }
 
 
