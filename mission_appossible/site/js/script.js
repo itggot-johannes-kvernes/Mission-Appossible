@@ -29,20 +29,20 @@ var3.classList.add('current_page');
 
 if(var2 == 'index.html') {
     document.querySelector('#star').classList.add('current_page');
-    document.querySelector('.starred').classList.add('.background_tiny_bit_darker');
+    document.querySelector('.starred').classList.add('background_tiny_bit_darker');
 }
 else if(var2 == 'new.html') {
     document.querySelector('#new').classList.add('current_page');
-    document.querySelector('.new').classList.add('.background_tiny_bit_darker');
+    document.querySelector('.new').classList.add('background_tiny_bit_darker');
 }
 else if(var2 == 'settings.html') {
     document.querySelector('#settings').classList.add('current_page');
-    document.querySelector('.settings').classList.add('.background_tiny_bit_darker');
+    document.querySelector('.settings').classList.add('background_tiny_bit_darker');
 }
 
 
 if(var2 == 'index.html') {
-    document.querySelector('#title').innerHTML='Hair';
+    document.querySelector('#title').innerHTML='Starred';
 }
 else if(var2 == 'new.html') {
     document.querySelector('#title').innerHTML='New';
