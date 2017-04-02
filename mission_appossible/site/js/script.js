@@ -50,3 +50,7 @@ else if(var2 == 'new.html') {
 else if(var2 == 'settings.html') {
     document.querySelector('#title').innerHTML='Settings';
 }
+
+function popup_function(hair_id){
+    alert(hair_id);
+}

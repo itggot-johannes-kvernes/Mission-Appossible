@@ -31,18 +31,21 @@ body{
     color: white;
 }
 
-.search{
+.material-icons.search{
     height: 24px;
     width: 24px;
     margin-top: 16px;
-    margin-right: 17px;
+    margin-right: 16px;
+    margin-left: 0;
     color: white;
 }
 
-.navigation{
+.material-icons.navigation{
     margin-top: 16px;
     height: 24px;
     width: 24px;
+    margin-left: 0;
+    margin-right: 0;
     color: white;
 }
 
@@ -71,7 +74,8 @@ body{
     height: 100%;
     width: 319px;
     top: 0;
-    left: -319px;
+    left: -327px;
+    box-shadow: 8px 0 20px -4px rgba(0, 0, 0, 0.87)
 }
 
 .menu_visible{
@@ -81,7 +85,7 @@ body{
 
 @keyframes show{
     0%{
-        left: -319px;
+        left: -327px;
     }
     100%{
         left: 0;
@@ -98,7 +102,7 @@ body{
         left: 0;
     }
     100%{
-        left: -319px;
+        left: -327px;
     }
 }
 
@@ -168,6 +172,7 @@ body{
 .grid_list{
     display: flex;
     flex-direction: row;
+    align-self: center;
 }
 
 .grid_vertical{
@@ -178,7 +183,8 @@ body{
 .grid_picture{
     height: 121px;
     width: 121px;
-    margin: 3px;
+    margin: 1.5px;
+    margin-top: 3px;
 }
 
 .menu_icon{
@@ -223,12 +229,12 @@ a{
 
 #title{
     color: white;
-    width: 230px;
+    width: 223px;
     margin-top: 16px;
     margin-bottom: 0;
     height: 24px;
     line-height: 24px;
-    padding-left: 24px;
+    font-weight: normal;
 }
 
 .material-icons{
@@ -236,6 +242,27 @@ a{
     margin-left: 16px;
 }
 
-#title{
-    font-weight: normal;
+.popup{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    padding: 24px;
+    padding-bottom: 8px;
+    width: 250px;
+}
+
+#popup_title{
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 123px;
+}
+
+.popup_button{
+    color: #ff6d00;
+    margin-right: 8px;
 }
