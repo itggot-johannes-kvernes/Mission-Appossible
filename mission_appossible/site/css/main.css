@@ -127,7 +127,7 @@ body{
         opacity: 0;
     }
     100%{
-        opacity: 0.5
+        opacity: 0.5;
     }
 }
 
@@ -243,13 +243,45 @@ a{
 }
 
 .popup{
-    display: flex;
+    display: none;
+}
+
+.popup_visible{
     flex-direction: column;
     position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
     background-color: white;
     padding: 24px;
     padding-bottom: 8px;
     width: 250px;
+    animation: popup_fadein 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup_fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.popup_hidden{
+    animation: popup_fadeout 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup_fadeout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 #popup_title{
@@ -259,7 +291,6 @@ a{
 .buttons{
     display: flex;
     flex-direction: row;
-    width: 123px;
 }
 
 .popup_button{

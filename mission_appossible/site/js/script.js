@@ -2,12 +2,12 @@ function menu_function() {
     var y = document.querySelector('#dark_box');
     if(!y.classList.contains('fade_in') && !y.classList.contains('fade_out')){
         y.classList.toggle('fade_in');
-        y.classList.remove('dark_box')
+        y.classList.toggle('dark_box')
     }
     else {
         y.classList.toggle('fade_in');
         y.classList.toggle('fade_out');
-        y.classList.remove('dark_box')
+        y.classList.toggle('dark_box')
     }
 
 
@@ -52,5 +52,13 @@ else if(var2 == 'settings.html') {
 }
 
 function popup_function(hair_id){
-    alert(hair_id);
+    var z = document.querySelector('#popup');
+    if(!z.classList.contains('popup_hidden') && !z.classList.contains('popup_visible')){
+        z.classList.toggle('popup_visible');
+        z.classList.remove('popup');
+    }
+    else {
+        z.classList.toggle('popup_hidden');
+        z.classList.toggle('popup_visible');
+    }
 }
