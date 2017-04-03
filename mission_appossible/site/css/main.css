@@ -195,7 +195,6 @@ body{
 
 .current_page{
     color: #ff6d00;
-    /*background-color: rgba(0, 0, 0, 0.26)*/
 }
 
 .background_tiny_bit_darker{
@@ -296,4 +295,8 @@ a{
 .popup_button{
     color: #ff6d00;
     margin-right: 8px;
+}
+
+.dark_box_popup{
+    display: none;
 }
