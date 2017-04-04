@@ -51,7 +51,33 @@ else if(var2 == 'settings.html') {
     document.querySelector('#title').innerHTML='Settings';
 }
 
-function popup_function(hair_id){
+function show_popup(hair_id){
+    var img = document.querySelector('#' + hair_id);
+    document.querySelector('#popup_picture').src = img.src;
+
+    var y = document.querySelector('#dark_box_popup');
+    if(!y.classList.contains('fade_in') && !y.classList.contains('fade_out')){
+        y.classList.toggle('fade_in');
+        y.classList.toggle('dark_box_popup')
+    }
+    else {
+        y.classList.toggle('fade_in');
+        y.classList.toggle('fade_out');
+        y.classList.toggle('dark_box_popup')
+    }
+
+    var z = document.querySelector('#popup');
+    if(!z.classList.contains('popup_hidden') && !z.classList.contains('popup_visible')){
+        z.classList.toggle('popup_visible');
+        z.classList.remove('popup');
+    }
+    else {
+        z.classList.toggle('popup_hidden');
+        z.classList.toggle('popup_visible');
+    }
+}
+
+function hide_popup(){
     var y = document.querySelector('#dark_box_popup');
     if(!y.classList.contains('fade_in') && !y.classList.contains('fade_out')){
         y.classList.toggle('fade_in');

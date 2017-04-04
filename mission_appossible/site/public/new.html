@@ -18,7 +18,7 @@
            
             <div id="dark_box" class="dark_box" onclick="menu_function()">
             </div>
-            <div id="dark_box_popup" class="dark_box_popup" onclick="popup_function()">
+            <div id="dark_box_popup" class="dark_box_popup" onclick="hide_popup()">
             </div>
             <nav id="menu" class="menu">
                 <img class="menu_img" src="./img/menu_img.jpg">
@@ -48,22 +48,23 @@
         </header>
         <div class="grid_list">
     <div class="grid_vertical">
-        <img id="5" class="grid_picture" src="./img/hair5.jpg" onclick="popup_function(this.id)">
-        <img id="4" class="grid_picture" src="./img/hair4.jpg" onclick="popup_function(this.id)">
+        <img id="img_5" class="grid_picture" src="./img/hair5.jpg" onclick="show_popup(this.id)">
+        <img id="img_4" class="grid_picture" src="./img/hair4.jpg" onclick="show_popup(this.id)">
     </div>
     <div class="grid_vertical">
-        <img id="3" class="grid_picture" src="./img/hair3.jpg" onclick="popup_function(this.id)">
-        <img id="2" class="grid_picture" src="./img/hair2.jpg" onclick="popup_function(this.id)">
+        <img id="img_3" class="grid_picture" src="./img/hair3.jpg" onclick="show_popup(this.id)">
+        <img id="img_2" class="grid_picture" src="./img/hair2.jpg" onclick="show_popup(this.id)">
     </div>
     <div class="grid_vertical">
-        <img id="1" class="grid_picture" src="./img/hair1.jpg" onclick="popup_function(this.id)">
+        <img id="img_1" class="grid_picture" src="./img/hair1.jpg" onclick="show_popup(this.id)">
     </div>
 </div>
 
-<section id ="popup" class="popup">
+<section id="popup" class="popup">
     <h2 id="popup_title">Apply hairstyle?</h2>
     <p>Do you wish to apply this hairstyle to yourself?</p>
-    <div class="buttons" onclick="popup_function()">
+    <img id="popup_picture" src="" alt="Picture of hair"></img>
+    <div class="buttons" onclick="hide_popup()">
         <p class="popup_button">CANCEL</p>
         <p class="popup_button">APPLY</p>
 </section>
