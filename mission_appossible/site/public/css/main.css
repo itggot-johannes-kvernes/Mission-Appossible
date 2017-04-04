@@ -164,6 +164,7 @@ body{
 
 .grid_list{
     align-self: center;
+    margin-top: 8px;
 }
 
 .grid_picture{
@@ -239,11 +240,12 @@ a{
     right: 0;
     top: 100px;
     background-color: white;
-    padding: 24px;
-    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
     width: 250px;
     animation: popup_fadein 0.3s 1;
     animation-fill-mode: forwards;
+    box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87);
 }
 
 @keyframes popup_fadein{
@@ -287,10 +289,32 @@ a{
     display: none;
 }
 
-#popup_picture{
-    align-self: center;
+.setting_option{
+    height: 56px;
+    display: flex;
+    align-items: center;
 }
 
-@media (min-width: 667px) and (min-height: 375px) and (orientation: landscape){
 
+
+
+
+
+
+
+@media (min-width: 667px) and (min-height: 375px) and (orientation: landscape){
+    .popup_visible{
+        flex-direction: column;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: calc((100vh - 298px) /2);
+        background-color: white;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 250px;
+        animation: popup_fadein 0.3s 1;
+        animation-fill-mode: forwards;
+    }
 }
