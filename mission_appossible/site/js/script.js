@@ -101,3 +101,56 @@ function hide_popup(){
         z.classList.toggle('popup');
     }
 }
+
+
+
+
+
+
+
+function volume_function(){
+    var a = document.querySelector('#first_oval');
+    if(!a.classList.contains('oval_on') && !a.classList.contains('oval_off')){
+        a.classList.remove('oval_start');
+        a.classList.toggle('oval_on');
+    }
+    else {
+        a.classList.toggle('oval_on');
+        a.classList.toggle('oval_off');   
+    }
+
+    var b = document.querySelector('#first_round');
+    if(!b.classList.contains('round_on') && !b.classList.contains('round_off')){
+        b.classList.remove('round_start');
+        b.classList.toggle('round_on');
+    }
+    else {
+        b.classList.toggle('round_on');
+        b.classList.toggle('round_off');   
+    }
+}
+
+
+
+
+function notifications_function(){
+    var a = document.querySelector('#second_oval');
+    if(!a.classList.contains('oval_on') && !a.classList.contains('oval_off')){
+        a.classList.remove('oval_start');
+        a.classList.toggle('oval_on');
+    }
+    else {
+        a.classList.toggle('oval_on');
+        a.classList.toggle('oval_off');   
+    }
+
+    var b = document.querySelector('#second_round');
+    if(!b.classList.contains('round_on') && !b.classList.contains('round_off')){
+        b.classList.remove('round_start');
+        b.classList.toggle('round_on');
+    }
+    else {
+        b.classList.toggle('round_on');
+        b.classList.toggle('round_off');   
+    }
+}

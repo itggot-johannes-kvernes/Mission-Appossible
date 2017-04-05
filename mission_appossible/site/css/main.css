@@ -293,7 +293,142 @@ a{
     height: 56px;
     display: flex;
     align-items: center;
+    padding-right: 24px;
 }
+
+.on_off{
+    text-align: right;
+}
+
+.setting_text{
+    width: 100%;
+}
+
+.oval_start{
+    position: absolute;
+    right: 24px;
+    background-color: #979797;
+    height: 16px;
+    width: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0;
+}
+
+.round_start{
+    position: absolute;
+    right: 40px;
+    background-color: #e1e1e1;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.oval_off{
+    position: absolute;
+    right: 24px;
+    background-color: #979797;
+    height: 16px;
+    width: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0;
+    animation: oval_off 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes oval_off{
+    0%{
+        background-color: #df9055;
+    }
+    100%{
+        background-color: #979797;
+    }
+}
+
+.oval_on{
+    position: absolute;
+    right: 24px;
+    background-color: #df9055;
+    height: 16px;
+    width: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0;
+    animation: oval_on 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes oval_on{
+    0%{
+        background-color: #979797;
+    }
+    100%{
+        background-color: #df9055;    
+    }
+}
+
+.round_off{
+    position: absolute;
+    right: 40px;
+    background-color: #e1e1e1;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    animation: round_off 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round_off{
+    0%{
+        background-color: #ff6d00;
+        right: 24px;
+    }
+    100%{
+        background-color: #e1e1e1;
+        right: 40px;
+    }
+}
+
+.round_on{
+    position: absolute;
+    right: 24px;
+    background-color: #ff6d00;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    animation: round_on 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round_on{
+    0%{
+        background-color: #e1e1e1;
+        right: 40px;
+    }
+    100%{
+        background-color: #ff6d00;
+        right: 24px;
+    }
+}
+
+#first_oval{
+    top: 76px;
+}
+
+#first_round{
+    top: 72px;
+}
+
+#second_oval{
+    top: 132px;
+}
+
+#second_round{
+    top: 128px;
+}
+
+
 
 
 
