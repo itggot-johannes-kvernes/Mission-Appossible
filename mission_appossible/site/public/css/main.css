@@ -165,13 +165,13 @@ body{
 .grid_list{
     align-self: center;
     margin-top: 8px;
+    max-width: 375px;
 }
 
 .grid_picture{
     height: 120px;
     width: 120px;
-    margin: 1px;
-    margin-top: 3px;
+    margin: 0;
 }
 
 .menu_icon{
@@ -317,4 +317,37 @@ a{
         animation: popup_fadein 0.3s 1;
         animation-fill-mode: forwards;
     }
+}
+
+@media (orientation: landscape){
+    .grid_list{
+        align-self: center;
+        margin-top: 8px;
+        max-width: 626px;
+    }
+}
+
+@media (max-width: 374px){
+    .grid_list{
+        align-self: center;
+        margin-top: 8px;
+        max-width: 250px;
+    }
+}
+
+
+@media (orientation: portrait) and (min-width: 700px){
+    .grid_list{
+        align-self: center;
+        margin-top: 8px;
+        max-width: 626px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 600px){
+    .grid_list{
+    align-self: center;
+    margin-top: 8px;
+    max-width: 492px;
+}
 }
