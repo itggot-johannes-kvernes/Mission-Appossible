@@ -64,11 +64,12 @@ body{
 .menu{
     background-color: white;
     position: absolute;
+    z-index: 2;
     height: 100%;
     width: 319px;
     top: 0;
     left: -327px;
-    box-shadow: 8px 0 20px -4px rgba(0, 0, 0, 0.87)
+    box-shadow: 8px 0 20px -4px rgba(0, 0, 0, 0.87);
 }
 
 .menu_visible{
@@ -113,6 +114,7 @@ body{
     opacity: 0.5;
     animation: fadein 0.3s;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 @keyframes fadein{
@@ -293,21 +295,13 @@ a{
     height: 56px;
     display: flex;
     align-items: center;
-    padding-right: 24px;
-}
-
-.on_off{
-    text-align: right;
-}
-
-.setting_text{
-    width: 100%;
 }
 
 .oval_start{
     position: absolute;
     right: 24px;
-    background-color: #979797;
+    background-color: #000;
+    opacity: 0.3;
     height: 16px;
     width: 40px;
     border-radius: 8px;
@@ -327,7 +321,8 @@ a{
 .oval_off{
     position: absolute;
     right: 24px;
-    background-color: #979797;
+    background-color: #000;
+    opacity: 0.3;
     height: 16px;
     width: 40px;
     border-radius: 8px;
@@ -338,17 +333,20 @@ a{
 
 @keyframes oval_off{
     0%{
-        background-color: #df9055;
+        background-color: #ff6d00;
+        opacity: 0.54;
     }
     100%{
-        background-color: #979797;
+        background-color: #000;
+        opacity: 0.3;
     }
 }
 
 .oval_on{
     position: absolute;
     right: 24px;
-    background-color: #df9055;
+    background-color: #ff6d00;
+    opacity: 0.54;
     height: 16px;
     width: 40px;
     border-radius: 8px;
@@ -359,10 +357,12 @@ a{
 
 @keyframes oval_on{
     0%{
-        background-color: #979797;
+        background-color: #000;
+        opacity: 0.3;
     }
     100%{
-        background-color: #df9055;    
+        background-color: #ff6d00;   
+        opacity: 0.54; 
     }
 }
 
