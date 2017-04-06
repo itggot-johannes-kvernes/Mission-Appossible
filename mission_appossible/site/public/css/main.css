@@ -248,6 +248,7 @@ a{
     animation: popup_fadein 0.3s 1;
     animation-fill-mode: forwards;
     box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.87);
+    z-index: 3;
 }
 
 @keyframes popup_fadein{
@@ -466,6 +467,16 @@ a{
         margin-top: 8px;
         max-width: 250px;
     }
+    .menu{
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 264px;
+    top: 0;
+    left: -327px;
+    box-shadow: 8px 0 20px -4px rgba(0, 0, 0, 0.87);
+}
 }
 
 
