@@ -292,6 +292,10 @@ a{
     display: none;
 }
 
+#popup_picture{
+    width: 150px;
+}
+
 .setting_option{
     height: 56px;
     display: flex;
@@ -445,7 +449,7 @@ a{
         margin: auto;
         left: 0;
         right: 0;
-        top: calc((100vh - 298px) /2);
+        top: calc((100vh - 337px) /2);
         background-color: white;
         padding-left: 24px;
         padding-right: 24px;
